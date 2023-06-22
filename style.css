@@ -16,5 +16,117 @@
 body{
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 345px;
+    height: 500px;
+    padding: 16px;
+    margin-top: 32px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    gap: 24px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 10px 3px hsla(227, 36%, 90%, 0.76);
+}
+
+.image-div {
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-top: -16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}   
+
+[src="images/illustration-hero.svg"]{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: block;
+}
+
+.order-summary {
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.details {
+    color: var(--desaturated-blue);
+    font-size: 14px;
+    text-align: center;
+}
+
+.price-details-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+[src="images/icon-music.svg"]{
+    height: 33px;
+}
+
+.plan-details-div {
+    margin-left: -36px;
+}
+.plan-details-div h4{
+    color: var(--dark-blue);
+    font-weight: 900;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+
+[href="#"]{
+color: var(--bright-blue);
+font-weight: 900;
+}
+[href="#"]:hover {
+    color: hsl(247, 53%, 77%);
+    font-weight: 900;
+}
+.plan-details-div p{
+    color: var(--desaturated-blue);
+}
+ .payment {
+    background-color: var(--bright-blue);
+    color: var(--Pale-blue);
+    font-weight: 700;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 10px 3px hsla(227, 36%, 90%, 0.76);
+}
+
+.payment:hover {
+    background-color: hsl(245, 83%, 68%);
+}
+.cancel{ 
+    color: var(--desaturated-blue);
+    text-align: center;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.cancel:hover{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 32px;
+}
